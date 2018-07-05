@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+  <Say>Hi Stan! A person has found a bird to identify <%= @request.where %>. We think it could be a <%= @request.nice_contents %>. What do you think it is?</Say>
+  <Gather input="speech" action="http://c8c992b1.ngrok.io/calls/record?request_id=<%= @request_id %>">
+  </Gather>
+</Response>
